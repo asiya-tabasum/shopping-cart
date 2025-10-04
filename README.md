@@ -18,7 +18,7 @@ This project demonstrates a basic shopping cart application with the following f
 - Custom UI design with Tailwind CSS.
 - Sticky header shows cart information and is always accessible.
 - Two main pages:
-  - **Product List Page** (`/`)
+  - **Product List Page** (`/home`)
   - **Cart Page** (`/cart`)
 
 ### 2. Product List Page
@@ -26,6 +26,7 @@ This project demonstrates a basic shopping cart application with the following f
 - Each product shows:
   - **Name**
   - **Price**
+  - **Image**
   - **"Add to Cart"** button
 
 ### 3. Cart Functionality
@@ -43,7 +44,7 @@ This project demonstrates a basic shopping cart application with the following f
 
 ## Architecture & State Management
 
-- State is managed efficiently using React hooks (`useState`) and a custom `useCart` hook.
+- State is managed efficiently using React hooks (`useState`) and a custom `useContext` hook.
 - Cart state persists through reloads and provides a smooth user experience.
 
 ---
@@ -82,18 +83,12 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## Screenshots
-
-> _(Add screenshots of the Product List, Cart Page, and Header with cart count if desired)_
-
----
-
 ## Notes
 
 - Built as a frontend-only demo; no backend or persistent storage except local state.
 - Product data is hardcoded for demonstration.
 - Pagination implemented as a bonus.
-- All state management is handled with React hooks (`useState` and `useCart`).
+- All state management is handled with React hooks (`useState` and `useContext`).
 
 ---
 
@@ -105,4 +100,4 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Author
 
-[Shahir1122](https://github.com/Shahir1122)
+Asiya Tabasum Shaik(https://github.com/asiya-tabasum/)
