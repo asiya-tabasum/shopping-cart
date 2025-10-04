@@ -1,46 +1,108 @@
-# Getting Started with Create React App
+# Shopping Cart – React Frontend Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple e-commerce frontend built with **React**, **TypeScript**, and **Tailwind CSS**.
 
-## Available Scripts
+This project demonstrates a basic shopping cart application with the following features:
 
-In the project directory, you can run:
+- **Product List Page:** Browse a list of 20+ hardcoded products.
+- **Add-to-Cart Functionality:** Add products to the cart, with support for quantity management.
+- **Cart Page:** View, remove, or update the quantity of items added to the cart.
+- **Paginated Product List:** (Bonus) Product listing supports pagination.
+- **Sticky Header:** Header includes a cart icon with dynamic item count and navigation.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 1. Layout
+- Custom UI design with Tailwind CSS.
+- Sticky header shows cart information and is always accessible.
+- Two main pages:
+  - **Product List Page** (`/`)
+  - **Cart Page** (`/cart`)
 
-### `npm test`
+### 2. Product List Page
+- Displays at least 20 hardcoded products.
+- Each product shows:
+  - **Name**
+  - **Price**
+  - **"Add to Cart"** button
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3. Cart Functionality
+- Clicking "Add to Cart" adds the product (or increases quantity if already added).
+- Cart displays:
+  - Product name, quantity, and price
+  - Controls to increase/decrease quantity
+  - Remove button for each product
+  - Total price of all items
 
-### `npm run build`
+### 4. Cart Count in Header
+- Cart icon in the sticky header shows the total number of items currently in the cart.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Architecture & State Management
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- State is managed efficiently using React hooks (`useState`) and a custom `useCart` hook.
+- Cart state persists through reloads and provides a smooth user experience.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## User Flow Diagram
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```mermaid
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+flowchart TD
+    A[Product List Page] -->|Add to Cart| B[Header Cart Icon<br/>Count Updates]
+    B -->|Click Cart Icon| C[Cart Page]
+    C -->|Increase/Decrease/Remove| D[Cart Updated & Total Price]
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## Tech Stack
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+
+## Getting Started
+
+### Installation
+
+```bash
+cd shopping-cart
+npm install
+npm start
+```
+
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## Screenshots
+
+> _(Add screenshots of the Product List, Cart Page, and Header with cart count if desired)_
+
+---
+
+## Notes
+
+- Built as a frontend-only demo; no backend or persistent storage except local state.
+- Product data is hardcoded for demonstration.
+- Pagination implemented as a bonus.
+- All state management is handled with React hooks (`useState` and `useCart`).
+
+---
+
+## License
+
+[MIT](LICENSE)
+
+---
+
+## Author
+
+[Shahir1122](https://github.com/Shahir1122)
