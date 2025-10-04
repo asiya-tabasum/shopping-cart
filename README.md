@@ -27,6 +27,7 @@ This project demonstrates a basic shopping cart application with the following f
   - **Name**
   - **Price**
   - **Image**
+  - **Description**
   - **"Add to Cart"** button
 
 ### 3. Cart Functionality
