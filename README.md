@@ -7,7 +7,7 @@ This project demonstrates a basic shopping cart application with the following f
 - **Product List Page:** Browse a list of 20+ hardcoded products.
 - **Add-to-Cart Functionality:** Add products to the cart, with support for quantity management.
 - **Cart Page:** View, remove, or update the quantity of items added to the cart.
-- **Paginated Product List:** (Bonus) Product listing supports pagination.
+- **Paginated Product List:** Product listing supports pagination.
 - **Sticky Header:** Header includes a cart icon with dynamic item count and navigation.
 
 ---
